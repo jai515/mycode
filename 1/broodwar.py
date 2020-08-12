@@ -74,13 +74,6 @@ def play(question_bank):
         question_bank.pop(question)
 
     # game over response
-    print(f"You got {correct} out of {totalQuestions} quotes right.")
-
-    if correct < 0.2 * totalQuestions:
-        print("Do you even know what Starcraft is?")
-    elif correct < 0.6 * totalQuestions:
-        print("Do you even zergling rush?")
-    else:
-        print("What's your apm?")
+    print(f"You got {correct} out of {totalQuestions} quotes right!")
 
 play(questions)
