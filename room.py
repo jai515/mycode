@@ -24,7 +24,7 @@ class Room:
         self.contents = None
 
     def move(self, direction):
-        if self.moves[direction] is None:
+        if self.moves.get(direction) is None or self.moves[direction] is None:
             print("You can't move that direction.")
             return False
         else:
